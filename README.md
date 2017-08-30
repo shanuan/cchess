@@ -1,1 +1,2 @@
-### [V0.0.2](https://github.com/littleflute/chess/edit/master/README.md)
+### [V0.0.3](https://github.com/littleflute/chess/edit/master/README.md)
+### [ZuoWei/FeiXiang](ZuoWei/FeiXiang)
