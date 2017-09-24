@@ -139,7 +139,7 @@ Board.prototype.setSearch = function(hashLevel) {
 }
 
 Board.prototype.flipped = function(sq) {
-  return this.computer == 0 ? SQUARE_FLIP(sq) : sq;
+  return this.computer == -1 ? SQUARE_FLIP(sq) : sq;
 //  return （this.computer == 0 || this.computer == 3） ? SQUARE_FLIP(sq) : sq; //by xd 14:37 2017/9/24 bjt
 }
 
