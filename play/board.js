@@ -1,4 +1,6 @@
 /*
+xd v0.0.3
+
 board.js - Source Code for XiangQi Wizard Light, Part IV
 
 XiangQi Wizard Light - a Chinese Chess Program for JavaScript
