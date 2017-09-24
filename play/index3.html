@@ -44,7 +44,7 @@ label {
     --></style>
   </head>
   <body>
-    <div style="text-align:center;font-size:28px;font-family:黑体">漂泊者乐园象棋高级（V0.0.3）</div>
+    <div style="text-align:center;font-size:28px;font-family:黑体">漂泊者乐园象棋高级（V0.0.4）</div>
     <div style="height:16px"></div>
     <div style="text-align:center;white-space:nowrap">
       <span class="td" style="margin-right:10px">
@@ -62,6 +62,7 @@ label {
           <option value="1">让左马</option>
           <option value="2">让双马</option>
           <option value="3">让九子</option>
+          <option selected value="4">不让子mirror</option>
         </select></div>
         <div style="padding-top:2px"><input type="button" class="button" value="重新开始" onclick="restart_click()"></div>
         <div style="padding-top:2px"><input type="button" class="button" value="悔棋" onclick="retract_click()"></div>
@@ -86,6 +87,7 @@ var STARTUP_FEN = [
   "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKAB1R w",
   "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/R1BAKAB1R w",
   "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/9/1C5C1/9/RN2K2NR w",
+  "RNBAKABNR/9/1C5C1/P1P1P1P1P/9/9/p1p1p1p1p/1c5c1/9/rnbakabnr w",
 ];
 
 function createOption(text, value, ie8) {
