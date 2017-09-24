@@ -1,5 +1,5 @@
 /*
-xd v0.0.3
+xd v0.0.4
 
 board.js - Source Code for XiangQi Wizard Light, Part IV
 
