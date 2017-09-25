@@ -1,6 +1,5 @@
 
-/*
-xd v0.0.1
+/* 
 
 board.js - Source Code for XiangQi Wizard Light, Part IV
 
@@ -24,6 +23,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 */
 
 "use strict";
+var xdDebug		= -1;
+var xdNoPCJSV		= "xdNoPC1.js: V0.0.8";
 
 var RESULT_UNKNOWN = 0;
 var RESULT_WIN = 1;
@@ -116,11 +117,43 @@ function Board(container, images, sounds) {
   style.top = THINKING_TOP + "px";
   container.appendChild(this.thinking);
 
+  this.xdDbg1Msg = document.createElement("div");
+  this.xdDbg1Msg.innerHTML = xdNoPCJSV;		
+  style = this.xdDbg1Msg.style;
+  style.visibility = "visible";
+  style.position = "absolute";
+  style.left = SQUARE_SIZE + "px";
+  style.top = THINKING_TOP + "px";
+  container.appendChild(this.xdDbg1Msg);
+   
+
   this.dummy = document.createElement("div");
   this.dummy.style.position = "absolute";
   container.appendChild(this.dummy);
 
   this.flushBoard();
+}
+
+Board.prototype.xdDbg1 = function(container,boss) { 
+	boss.Msg1 = document.createElement("div");
+  	boss.Msg1.innerHTML = xdNoPCJSV;
+	var style = this.Msg1.style;
+  	style.visibility = "visible";
+  	style.position = "absolute";
+  	style.left = SQUARE_SIZE + "px";
+  	style.top = THINKING_TOP + "px";
+  	container.appendChild(boss.Msg1);	  
+}
+
+Board.prototype.xdCreateThinking = function() {  
+  this.thinking = document.createElement("img");
+  this.thinking.src = images + "thinking.gif";
+  style = this.thinking.style;
+  style.visibility = "visible";//"hidden";
+  style.position = "absolute";
+  style.left = THINKING_LEFT + "px";
+  style.top = THINKING_TOP + "px";
+  container.appendChild(this.thinking);
 }
 
 Board.prototype.playSound = function(soundFile) {
@@ -140,8 +173,7 @@ Board.prototype.setSearch = function(hashLevel) {
 }
 
 Board.prototype.flipped = function(sq) {
-  return this.computer == 0 ? SQUARE_FLIP(sq) : sq;
-//  return （this.computer == 0 || this.computer == 3） ? SQUARE_FLIP(sq) : sq; //by xd 14:37 2017/9/24 bjt
+  return this.computer == xdDebug ? SQUARE_FLIP(sq) : sq; 
 }
 
 Board.prototype.computerMove = function() {
