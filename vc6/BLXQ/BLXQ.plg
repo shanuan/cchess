@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BLXQ - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/BLXQ.res" /d "_DEBUG" "C:\Users\13699\Downloads\hjhy-c-master\c\files\BLXQ\BLXQ.rc"" 
+Creating temporary file "C:\Users\13699\AppData\Local\Temp\RSP3DC1.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/BLXQ.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\13699\Downloads\hjhy-c-master\c\files\BLXQ\BLXQ.cpp"
+]
+Creating command line "cl.exe @C:\Users\13699\AppData\Local\Temp\RSP3DC1.tmp" 
+Creating temporary file "C:\Users\13699\AppData\Local\Temp\RSP3DD2.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/BLXQ.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\13699\Downloads\hjhy-c-master\c\files\BLXQ\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\13699\AppData\Local\Temp\RSP3DD2.tmp" 
+Creating temporary file "C:\Users\13699\AppData\Local\Temp\RSP3DD3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/BLXQ.pdb" /debug /machine:I386 /out:"Debug/BLXQ.exe" /pdbtype:sept 
+".\Debug\BLXQ.obj"
+".\Debug\StdAfx.obj"
+".\Debug\BLXQ.res"
+]
+Creating command line "link.exe @C:\Users\13699\AppData\Local\Temp\RSP3DD3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BLXQ.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+BLXQ.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
