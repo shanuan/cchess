@@ -1,4 +1,5 @@
-### [V0.0.6](https://github.com/littleflute/chess/edit/master/README.md) [littleflute-blog](https://littleflute.github.io/blog)
+### [V0.0.7](https://github.com/littleflute/chess/edit/master/README.md) [littleflute-blog](https://littleflute.github.io/blog)
 ### [blog](https://littleflute.github.io/blog/)
+### [ref/DhtmlXQ_www_dpxq_com](ref/DhtmlXQ_www_dpxq_com)
 ### [ZuoWei/FeiXiang](ZuoWei/FeiXiang)
 ### [play](play)
