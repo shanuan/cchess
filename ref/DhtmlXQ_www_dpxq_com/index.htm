@@ -13,14 +13,18 @@
 <title>全文本 DHTML 动态棋盘 dpxq.com 版权所有</title>
 	
 <style>
+
 body {margin:0;}
 
-.topnav {
+.navbar {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.topnav a {
+.navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -30,30 +34,27 @@ body {margin:0;}
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
 </style>
 </head>
 <body onkeydown="Xnc_KEvent(event.keyCode)" style="background-color:transparent">
 
-<div class="topnav">
-  <a class="active" href="..">[..]</a>
-  <a class="active" href=".">[.]</a>
-  <a href="https://github.com/littleflute/cchess/edit/master/ref/DhtmlXQ_www_dpxq_com/index.htm">v0.0.2</a> 
+<div class="navbar">
+  <a href="..">[..]</a>
+  <a href="https://www.w3schools.com/howto/howto_css_fixed_menu.asp">[ref1:navbar]</a>
+  <a href="https://github.com/littleflute/cchess/edit/master/ref/DhtmlXQ_www_dpxq_com/index.htm">v0.0.3</a> 
 </div>
-
+<div class="main">
 <script type="text/javascript">
 <!--
 	if (!DhtmlXQimgpath) var DhtmlXQimgpath = '';
 	document.write('<scr'+'ipt type="text/javascr'+'ipt" src="'+DhtmlXQimgpath+'DhtmlXQ_www_dpxq_com.js"></scr'+'ipt>');
 //-->
+</div>
 </script>
 </body>
 </html>
